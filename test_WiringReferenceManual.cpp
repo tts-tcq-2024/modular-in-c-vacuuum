@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <assert.h> 
-#include "WiringReferenceManual.h"
 #include "test_WiringReferenceManual.h"
 
 void testNumberToPair(int pairNumber,
