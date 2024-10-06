@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h> 
-#include <WiringReferenceManual.h>
+#include "WiringReferenceManual.h"
 
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
