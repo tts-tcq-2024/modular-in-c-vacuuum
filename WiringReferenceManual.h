@@ -1,8 +1,6 @@
 #ifndef WIRING_REFERENCE_MANUAL_H
 #define WIRING_REFERENCE_MANUAL_H
 
-#include "WiringReferenceManual.h"
-
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 extern const char* MajorColorNames[];
