@@ -7,8 +7,8 @@
 extern "C" {
 #endif
 
-void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor);
-void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber);
+void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
+void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
 
 #ifdef __cplusplus
 }
