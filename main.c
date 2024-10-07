@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "WiringReferenceManual.h"
-#include "test_WiringReferenceManual.h"
+#include "WiringReferenceManual_test.h"
 
 int main()
 {
