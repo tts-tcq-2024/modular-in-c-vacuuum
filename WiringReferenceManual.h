@@ -17,6 +17,6 @@ typedef struct {
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
-void PrintWiringReferenceManual(void);
+void FormatWiringReferenceManual(void);
 
 #endif  // WIRING_REFERENCE_MANUAL_H
