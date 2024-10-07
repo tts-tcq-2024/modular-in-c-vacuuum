@@ -25,13 +25,23 @@ int GetPairNumberFromColor(const ColorPair* colorPair)
     return colorPair->majorColor * numberOfMinorColors + colorPair->minorColor + 1;
 }
 
-void PrintWiringReferenceManual(void)
+void FormatWiringReferenceManual(void) 
 {
-    for(int pairNumber = 1; pairNumber <= numberOfMajorColors * numberOfMinorColors; pairNumber++) 
+    // Print header for the manual
+    printf("Pair Number\tMajor Color\tMinor Color\n");
+    printf("-----------\t-----------\t-----------\n");
+
+    // Loop through each pair and print the color names
+    for (int pairNumber = 1; pairNumber <= numberOfMajorColors * numberOfMinorColors; pairNumber++) 
     {
         ColorPair colorPair = GetColorFromPairNumber(pairNumber);
         char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
         ColorPairToString(&colorPair, colorPairNames);
-        printf("%d\t%s\n", pairNumber, colorPairNames);
+        
+        // Break the color pair into major and minor for easier readability
+        printf("%d\t\t%s\t\t%s\n", 
+               pairNumber, 
+               MajorColorNames[colorPair.majorColor], 
+               MinorColorNames[colorPair.minorColor]);
     }
 }
