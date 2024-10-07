@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: gcc -Wall -Wextra -o testchecker *.c
+      run: g++ -o test_program main.c WiringReferenceManual.c test_WiringReferenceManual.cpp
       
     - name: run
       run: ./testchecker
